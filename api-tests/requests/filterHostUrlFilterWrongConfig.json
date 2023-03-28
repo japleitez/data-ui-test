@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "id": "eu.europa.ec.eurostat.wihp.urlfilters.stormcrawler.HostURLFilter",
+      "configuration": {
+        "ignoreOutsideHost": null,
+        "ignoreOutsideDomain$": "unexpected"
+      }
+    }
+  ]
+}

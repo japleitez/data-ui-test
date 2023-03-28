@@ -1,0 +1,12 @@
+{
+    "sources": [{
+            "aua": "source1000",
+            "bla": "http://source1"
+        }, {
+            "aua": "source1001",
+            "bla": "http://source2"
+        }, {
+            "aua": "source1002",
+            "bla": "http://source3"
+        }
+    

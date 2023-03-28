@@ -1,0 +1,37 @@
+{
+  "id": <unique_id>,
+  "name": "<unique_name>",
+  "fetchInterval": 1440,
+  "fetchIntervalWhenError": 44640,
+  "fetchIntervalWhenFetchError": 120,
+  "extractorNoText": false,
+  "extractorTextIncludePattern": "- DIV[id=\"maincontent\"]\n- DIV[itemprop=\"articleBody\"]\n- ARTICLE",
+  "extractorTextExcludeTags": "- STYLE\n- SCRIPT",
+  "httpContentLimit": 15000000,
+  "emitOutLinks": true,
+  "maxEmitOutLinksPerPage": -1,
+  "parserFilters": [
+    {
+      "id": 4,
+      "className": "com.digitalpebble.stormcrawler.filtering.basic.BasicURLNormalizer",
+      "name": "BasicURLNormalizer",
+      "params": {
+        "checkValidURI": false,
+        "removeAnchorPart": false,
+        "unmangleQueryString": true
+      }
+    },
+  ],
+  "urlFilters": [],
+  "parseFilters": [],
+  "sources": [],
+  "dynamic": false,
+  "dynamicConfig": {
+    "language": "de",
+    "maximized": true,
+    "windowSize": "1920,1080",
+    "loadImages": "ALLOW",
+    "allowCookies": "BLOCK",
+    "allowGeolocation": "BLOCK"
+  }
+}

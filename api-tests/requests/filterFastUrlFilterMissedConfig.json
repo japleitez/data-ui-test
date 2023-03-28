@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "id": "eu.europa.ec.eurostat.wihp.urlfilters.stormcrawler.fasturlfilter.FastURLFilter",
+      "configuration": {
+        "rules": [
+          {
+            "scope__": "GLOBAL",
+            "patterns": [
+              "DenyPathQuery \\.jpg"
+            ]
+          },
+          {
+            "scope": "domain:stormcrawler.net",
+            "patterns__": [
+              "AllowPath /digitalpebble/",
+              "DenyPath .+"
+            ]
+          },
+          {
+            "scope": "metadata:key=value",
+            "patterns": [
+              "DenyPath .+"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

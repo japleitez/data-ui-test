@@ -1,0 +1,21 @@
+{
+	"id": null,
+	"name": "selenuim_option_null_test",
+	"fetchInterval": 1440,
+	"fetchIntervalWhenError": 44640,
+	"fetchIntervalWhenFetchError": 120,
+	"extractorNoText": false,
+	"extractorTextIncludePattern": "- DIV[id=\"maincontent\"]\n- DIV[itemprop=\"articleBody\"]\n- ARTICLE",
+	"extractorTextExcludeTags": "- STYLE\n- SCRIPT",
+	"httpContentLimit": 15000000,
+	"emitOutLinks": true,
+	"maxEmitOutLinksPerPage": -1,
+	"sources": [
+		{
+			"id": 2,
+			"name": "source2",
+			"url": "http://source2.com"
+		}
+	],
+	"dynamic": true
+}

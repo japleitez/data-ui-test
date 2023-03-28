@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "id": "eu.europa.ec.eurostat.wihp.urlfilters.stormcrawler.MaxDepthFilter",
+      "configuration": {
+        "well": 2
+      }
+    }
+  ]
+}

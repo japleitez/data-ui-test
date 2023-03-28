@@ -1,0 +1,22 @@
+{
+	"id": 101,
+	"name": "crawler demo 1",
+	"dynamic": false,
+	"sources": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	],
+	"__fetchInterval__": "this is an error, fetchInterval is mandatory",
+	"fetchIntervalWhenError": 44640,
+	"fetchIntervalWhenFetchError": 120,
+	"extractorNoText": false,
+	"extractorTextIncludePattern": "",
+	"extractorTextExcludeTags": "",
+	"httpContentLimit": -1,
+	"emitOutLinks": true,
+	"maxEmitOutLinksPerPage": -1
+}

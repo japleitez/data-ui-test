@@ -1,0 +1,16 @@
+{
+	"sources": [
+		{
+			"name": "source1000",
+			"url": "http://source1"
+		},
+		{
+			"name": "source1001",
+			"url": "http://source2"
+		},
+		{
+			"name": "source1002",
+			"url": "http://source3"
+		}
+	]
+}

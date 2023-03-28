@@ -1,0 +1,42 @@
+version: '2'
+services:
+  keycloak:
+    image: jboss/keycloak:7.0.0
+    command:
+      [
+          '-b',
+          '0.0.0.0',
+          '-Dkeycloak.migration.action=import',
+          '-Dkeycloak.migration.provider=dir',
+          '-Dkeycloak.migration.dir=/opt/jboss/keycloak/realm-config',
+          '-Dkeycloak.migration.strategy=OVERWRITE_EXISTING',
+          '-Djboss.socket.binding.port-offset=1000',
+      ]
+    volumes:
+      - ./realm-config:/opt/jboss/keycloak/realm-config
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - DB_VENDOR=h2
+    ports:
+      - 9080:9080
+      - 9443:9443
+      - 10990:10990
+  karate:
+    image:
+      ptrthomas/karate-chrome:1.1.0
+    container_name: karate
+    ports:
+      - 9222:9222
+      - 5900:5900
+    environment:
+      - KARATE_SOCAT_START=true
+      - KARATE_WIDTH=1920
+      - KARATE_HEIGHT=1080
+      - HTTP_PROXY=http://10.64.0.40:3128
+      - HTTPS_PROXY=https://10.64.0.40:3128
+    security_opt:
+      - seccomp=chrome.json
+    volumes:
+      - ./:/src
+

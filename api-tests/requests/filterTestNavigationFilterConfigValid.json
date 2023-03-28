@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "id": "eu.europa.ec.eurostat.wihp.navigationfilters.stormcrawler.BasicNavigationFilter",
+      "configuration": {
+        "steps": [
+          {
+            "action": "input",
+            "xpath": "//title",
+            "value": "my test",
+            "highlight": false,
+            "screenshot": true
+          },
+          {
+            "action": "click",
+            "xpath": "//button",
+            "value": null,
+            "highlight": false,
+            "screenshot": false
+          }
+        ]
+      }
+    }
+  ]
+}

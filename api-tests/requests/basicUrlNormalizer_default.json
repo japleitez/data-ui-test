@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "id": "eu.europa.ec.eurostat.wihp.urlfilters.stormcrawler.basicurlnormalizer.BasicURLNormalizer",
+      "configuration": {
+        "removeAnchorPart": true,
+        "unmangleQueryString": true,
+        "queryElementsToRemove":["asd", "ddc", "ccn"],
+        "checkValidURI": true,
+        "removeHashes": false,
+        "hostIDNtoASCII": false
+      }
+    }
+  ]
+}

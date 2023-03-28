@@ -1,0 +1,14 @@
+{
+  "id": "eu.europa.ec.eurostat.wihp.urlfilters.stormcrawler.basicurlnormalizer.BasicURLNormalizer",
+  "removeAnchorPart": true,
+  "unmangleQueryString": true,
+  "queryElementsToRemove":["asd", "ddc", "ccn"],
+  "checkValidURI": true,
+  "removeHashes": true,
+  "hostIDNtoASCII": false,
+  "urls": [
+    "https://www.blah.com/bla?caram=3&param2=bar&zaram=1#someresource",
+    "http://welldone?shouldstay=1&id=912ec803b2ce49e4a541068d495ab570",
+    "http://welldone?asd=a&ddc=b&ccn=d&shouldstay=1"
+  ]
+}

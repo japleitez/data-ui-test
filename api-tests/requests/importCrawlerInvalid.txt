@@ -1,0 +1,8 @@
+{
+	"name": "icrawler1000",
+	"sources": [
+		{
+			"name": "isource1000",
+			"url": "http://source1000"
+		},
+	]

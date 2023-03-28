@@ -1,0 +1,35 @@
+{
+	"name": "icrawler1000",
+	"sources": [
+		{
+			"name": "isource1000",
+			"url": "http://source1000"
+		},
+		{
+			"name": "isource2000",
+			"url": "http://source2000"
+		},
+		{
+			"name": "isource3000",
+			"url": "http://source3000"
+		}
+	],
+	"fetchInterval": 1440,
+	"fetchIntervalWhenError": 44640,
+	"fetchIntervalWhenFetchError": 120,
+	"extractorNoText": false,
+	"extractorTextIncludePattern": "",
+	"extractorTextExcludeTags": "",
+	"httpContentLimit": -1,
+	"emitOutLinks": true,
+	"maxEmitOutLinksPerPage": -1,
+	"dynamic" : false,
+	"dynamicConfig" : {
+		"language" : "de",
+		"maximized" : true,
+		"windowSize" : "1920,1080",
+		"loadImages" : "ALLOW",
+		"allowCookies" : "BLOCK",
+		"allowGeolocation" : "BLOCK"
+	}
+}

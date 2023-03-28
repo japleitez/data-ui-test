@@ -1,0 +1,40 @@
+{
+	"id": null,
+	"name": "<unique_name>",
+	"dynamic": false,
+	"sources": [
+		{
+			"id": 1
+		},
+		{
+			"id": 2
+		}
+	],
+	"fetchInterval": 1440,
+	"fetchIntervalWhenError": 44640,
+	"fetchIntervalWhenFetchError": 120,
+	"extractorNoText": false,
+	"extractorTextIncludePattern": "",
+	"extractorTextExcludeTags": "",
+	"httpContentLimit": -1,
+	"emitOutLinks": true,
+	"maxEmitOutLinksPerPage": -1,
+	"parserFilters": [
+		{
+			"className": "com.digitalpebble.stormcrawler.parse.filter.ParserFilter",
+			"name": "XPathFilter",
+			"params": {
+				"canonical": "//*[@rel=\"canonical\"]/@href",
+				"parse.description": [
+					"//*[@name=\"description\"]/@content",
+					"//*[@name=\"Description\"]/@content"
+				],
+				"parse.title": [
+					"//TITLE",
+					"//META[@name=\"title\"]/@content"
+				],
+				"parse.keywords": "//META[@name=\"keywords\"]/@content"
+			}
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "id": "eu.europa.ec.eurostat.wihp.navigationfilters.stormcrawler.BasicNavigationFilter",
+      "configuration": {
+
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "eu.europa.ec.eurostat.wihp.parsefilters.stormcrawler.xpathfilter.XPathFilter",
+  "protocol": "STATIC",
+  "url": "https://www.airbnb.com/",
+  "patterns": [
+    {
+      "property": "parse.title",
+      "expressions": ["//TITLE", "//META[@name=\"title\"]/@content"]
+    },
+    {
+      "property": "canonical",
+      "expressions": "//*[@rel=\"canonical\"]/@href"
+    },
+    {
+      "property": "parse.description",
+      "expressions": ["//*[@name=\"description\"]/@content", "//*[@name=\"Description\"]/@content"]
+    }
+  ]
+}

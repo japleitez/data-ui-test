@@ -1,0 +1,2 @@
+#!/bin/bash
+java "-Dkarate.options=--tags ~@ignore" -Dhttp.proxyHost=10.64.0.40 -Dhttp.proxyPort=3128 -Dhttps.proxyHost=10.64.0.40 -Dhttps.proxyPort=3128 -Dkarate.config.dir=config -cp "/karate.jar":. com.intuit.karate.Main "$@"

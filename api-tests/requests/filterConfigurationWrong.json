@@ -1,0 +1,1 @@
+{"param1": "test","param2": 5,"param3": 5.35,"param4": true,"param5": ["a","b"],"param6": [2,3],"param7": [3.5,4.8],"param8": [true,false],"wrong": ["https://www.test.com","https://www.google.com","invalid"]}

@@ -1,0 +1,2 @@
+#!/bin/bash
+java "-Dkarate.options=--tags ~@ignore" -Dkarate.config.dir=config -cp "/karate.jar":. com.intuit.karate.Main "$@"

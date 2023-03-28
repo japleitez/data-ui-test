@@ -1,0 +1,43 @@
+{
+  "character": "x",
+  "minReoccurrence": 3,
+  "maxReoccurrence": 10,
+  "percentage": true,
+  "minPercentage": 4,
+  "maxPercentage": 7,
+  "extraCharacters": [
+    "a",
+    "b",
+    "c"
+  ],
+  "extraCharactersMinReoccurrence": [
+    20,
+    null,
+    25
+  ],
+  "extraCharactersMinReoccurrencePercentage": [
+    20,
+    null,
+    null
+  ],
+  "extraCharactersExistInDomain": [
+    true,
+    null,
+    false
+  ],
+  "urls": [
+    "https://www.test.com",
+    "https://www.google.com",
+    "invalid"
+  ],
+  "metadata": {
+    "test": [
+      "test1",
+      "test2"
+    ],
+    "hola": [
+      "hola1",
+      "hola2"
+    ]
+  }
+}

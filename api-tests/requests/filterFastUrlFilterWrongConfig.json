@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "id": "eu.europa.ec.eurostat.wihp.urlfilters.stormcrawler.fasturlfilter.FastURLFilter",
+      "configuration": {
+        "rules": [
+          {
+            "scope": "222222",
+            "patterns": ["22222 wrong", "22222 again"]
+          },
+          {
+            "scope": "333333",
+            "patterns": ["33333 wrong", "33333 again"]
+          },
+          {
+            "scope": "444444",
+            "patterns": ["44444 wrong", "44444 again"]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+	"id": 30,
+	"name": "crawler30_updated",
+	"dynamic": false,
+	"sources": [
+		{
+			"id": 1
+		}
+	],
+	"fetchInterval": 1440,
+	"fetchIntervalWhenError": 44640,
+	"fetchIntervalWhenFetchError": 120,
+	"extractorNoText": true,
+	"extractorTextIncludePattern": "",
+	"extractorTextExcludeTags": "",
+	"httpContentLimit": 1,
+	"emitOutLinks": false,
+	"maxEmitOutLinksPerPage": -1
+}

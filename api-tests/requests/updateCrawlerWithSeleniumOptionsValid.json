@@ -1,0 +1,29 @@
+{
+	"id": <id_place>,
+	"name": "selenuim_option_test_update",
+	"fetchInterval": 1440,
+	"fetchIntervalWhenError": 44640,
+	"fetchIntervalWhenFetchError": 120,
+	"extractorNoText": false,
+	"extractorTextIncludePattern": "- DIV[id=\"maincontent\"]\n- DIV[itemprop=\"articleBody\"]\n- ARTICLE",
+	"extractorTextExcludeTags": "- STYLE\n- SCRIPT",
+	"httpContentLimit": 15000000,
+	"emitOutLinks": true,
+	"maxEmitOutLinksPerPage": -1,
+	"sources": [
+		{
+			"id": 2,
+			"name": "source2",
+			"url": "http://source2.com"
+		}
+	],
+	"dynamic": true,
+	"dynamicConfig": {
+		"language": "gr-CH",
+		"maximized": false,
+		"windowSize": <windowSize_place>,
+		"loadImages": <loadImages_place>,
+		"allowCookies": "ALLOW",
+		"allowGeolocation": "ALLOW"
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "scope": "GLOBAL",
+      "patterns": [
+        "DenyPathQuery \\.jpg"
+      ]
+    },
+    {
+      "scope": "domain:stormcrawler.net",
+      "patterns": [
+        "AllowPath /digitalpebble/",
+        "DenyPath .+"
+      ]
+    },
+    {
+      "scope": "metadata:key=value",
+      "patterns": [
+        "DenyPath .+"
+      ]
+    }
+  ],
+  "urls": [
+    "http://www.somedomain.com/image.jpg",
+    "http://stormcrawler.net/",
+    "http://stormcrawler.net/digitalpebble/"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$ignoreOutsideHost": true,
+  "$ignoreOutsideDomain": true,
+  "wrong": [
+    "https://www.sourcedomain.com/index.html",
+    "https://www.anotherDomain.com/index.html",
+    "https://sub.sourcedomain.com/index.html"
+  ]
+}

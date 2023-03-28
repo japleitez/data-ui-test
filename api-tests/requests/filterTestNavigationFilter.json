@@ -1,0 +1,19 @@
+{
+  "steps": [
+    {
+      "action": "input",
+      "xpath": "//title",
+      "value": "my test",
+      "highlight": true,
+      "screenshot": true
+    },
+    {
+      "action": "click",
+      "xpath": "//button",
+      "value": null,
+      "highlight": false,
+      "screenshot": false
+    }
+  ],
+  "url": "https://www.google.com"
+}

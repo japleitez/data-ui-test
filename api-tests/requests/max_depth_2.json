@@ -1,0 +1,7 @@
+{
+  "id": "eu.europa.ec.eurostat.wihp.urlfilters.stormcrawler.MaxDepthFilter",
+  "maxDepth": 2,
+  "urls": [
+    "https://www.blah.com/bla?caram=3&param2=bar&zaram=1#someresource"
+  ]
+}

@@ -1,0 +1,107 @@
+# This is a copy of ptrthomas/karate-chrome:1.1.0 with an updated chrome
+image: registry.fpfis.eu/estat/wihp/docker/karate:96-0-4664-110-1
+
+variables:
+  KARATE_SOCAT_START: "true"
+  KARATE_WIDTH: "1920"
+  KARATE_HEIGHT: "2080"
+  ENVIRONMENT: "development"
+
+stages:
+  - test1
+  - test2
+
+before_script:
+  - echo $ENVIRONMENT
+  - apt-get update
+  - apt install -y curl
+  - curl -w "\n" -s https://api.ipify.org
+  - chmod +x /entrypoint.sh
+  - /entrypoint.sh &
+  - sleep 10s
+  - chmod +x ./karate
+
+api-tests:
+  stage: test1
+  script:
+    - ./karate -e $ENVIRONMENT api-tests/
+  artifacts:
+    when: always
+    paths:
+        - target/*
+    expire_in: 1 day
+
+ui-acquisitions:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: acquisitions
+
+ui-sources1:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: sources/set1
+
+ui-sources2:
+  extends: .ui-test2
+  variables:
+    UI_FOLDER: sources/set2
+
+ui-sources3:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: sources/set3
+
+ui-crawlers1:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: crawlers/set1
+
+ui-crawlers2:
+  extends: .ui-test2
+  variables:
+    UI_FOLDER: crawlers/set2
+
+ui-crawlers3:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: crawlers/set3
+
+ui-crawlers4:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: crawlers/set4
+
+ui-playground1:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: playground/set1
+
+ui-playground2:
+  extends: .ui-test2
+  variables:
+    UI_FOLDER: playground/set2
+
+ui-environment:
+  extends: .ui-test1
+  variables:
+    UI_FOLDER: environment
+
+.ui-test1:
+  stage: test1
+  script:
+    - ./karate -e $ENVIRONMENT ui-tests/$UI_FOLDER
+  artifacts:
+    when: always
+    paths:
+        - target/*
+    expire_in: 1 day
+
+.ui-test2:
+  stage: test2
+  script:
+    - ./karate -e $ENVIRONMENT ui-tests/$UI_FOLDER
+  artifacts:
+    when: always
+    paths:
+      - target/*
+    expire_in: 1 day
